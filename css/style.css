@@ -97,23 +97,24 @@ p {
 
 .video-container {
     display: flex; /* Sử dụng Flexbox để căn chỉnh các video theo hàng ngang */
-    gap: 20px; /* Khoảng cách giữa các video */
-    width: 600px; /* Chiều rộng của container video */
+    gap: 10px; /* Giảm khoảng cách giữa các video */
+    width: 300px; /* Chiều rộng của container video */
     height: 300px; 
     margin: 20px auto; /* Căn giữa container */
     padding: 15px; /* Khoảng cách bên trong container */
     background-color: #000; /* Màu nền cho video container */
-    border-radius: 15px; /* Bo góc của container */
+    border-radius: 60px; /* Bo góc của container */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ cho container */
     overflow: hidden; /* Đảm bảo video không bị tràn ra ngoài container */
 }
 
 video {
-    width: 48%; /* Mỗi video chiếm 48% chiều rộng của container để vừa vặn */
+    width: 49%; /* Mỗi video chiếm 49% chiều rộng của container để sát lại nhau hơn */
     height: auto; /* Tự động điều chỉnh chiều cao để giữ tỷ lệ */
-    border-radius: 10px; /* Bo góc cho video */
+    border-radius: 30px; /* Bo góc cho video */
     display: block; /* Chặn khoảng trắng dưới video */
 }
+
 
 
 
