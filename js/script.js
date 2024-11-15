@@ -11,7 +11,7 @@ function updateCountdown() {
     const minutes = Math.floor((diffTime % (1000 * 60 * 60)) / (1000 * 60)); // Tính phút
     const seconds = Math.floor((diffTime % (1000 * 60)) / 1000); // Tính giây
 
-    countdownElement.textContent = `Đã yêu nhau ${days} ngày!`;
+    countdownElement.textContent = `Yêu ${days} ngày!`;
 
     // Hiển thị thời gian đếm giờ (giờ:phút:giây)
     clockElement.textContent = `Thời gian: ${hours} giờ ${minutes} phút ${seconds} giây`;
@@ -21,7 +21,7 @@ window.onload = function() {
     var videos = document.querySelectorAll("video"); // Lấy tất cả các video trên trang
 
     videos.forEach(function(video) {
-        video.muted = true; // Tắt tiếng video nếu cần
+        // video.muted = true; // Tắt tiếng video nếu cần
         video.play(); // Tự động phát video khi trang được tải
     });
 };
